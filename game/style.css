@@ -1,0 +1,47 @@
+/* Plucky's Great Escape — page shell styling.
+   Autumn palette: pumpkin, cranberry, wheat and barn brown. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #2b1a12;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color: #f7e8c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #59331d 0%, #2b1a12 60%);
+}
+
+#stage {
+  text-align: center;
+  padding: 18px 12px 10px;
+}
+
+canvas#game {
+  width: min(96vw, 1060px);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #f6c453;
+  border: 6px solid #7a3b14;
+  border-radius: 14px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55), inset 0 0 0 2px #f7e8c9;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#hint {
+  margin: 12px auto 4px;
+  max-width: 1060px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #d9b98a;
+}
